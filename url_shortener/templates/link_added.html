@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='link_added.css') }}">
+    <div class="container">
+        <div class="link-box"><div class="label">
+                Original-link
+        </div>
+            {{ original_url }}</div>
+        <div class="link-box"><a class="link" href="{{ new_link }}"><div class="label">
+                New-link
+        </div>{{ new_link }}</div></a>
+    </div>
+    
+
+{% endblock %}
+
+<!-- url_for('short.redirect_to_url',short_url=new_link,_external=True) -->

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Short - URL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav> 
+            <ul>
+                <li id="title">Short-URL</li>
+                <li><a href="{{ url_for( 'short.index' ) }}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+{% block content %}{% endblock %}
+
+</body>
+</html>

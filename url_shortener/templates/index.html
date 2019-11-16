@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+    <div class="form-style-2">
+            <div class="form-style-2-heading">Enter a long URL to make SHORT:</div>
+                <form class="form-style-2-heading" action="{{ url_for('short.add_link') }}" method="post">
+                <label for="field1"><span>Original-URL</span><input type="text" class="input-field" name="original_url" value="" /></label>
+                <label><span> </span><input type="submit" value="Create Short-URL"></label>
+                </form>
+    </div>
+{% endblock %}
